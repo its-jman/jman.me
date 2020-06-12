@@ -1,1 +1,94 @@
-<!DOCTYPE html><html lang="en">  <head>    <meta charset="utf-8" />    <title>Josh Manning</title>    <meta      name="description"      content="coach, ultimate frisbee, software engineer, user experience"    />    <meta      name="author"      content="Josh Manning <josh@jman.me> (https://jman.me)"    />    <link rel="stylesheet" href="/static/reset.css" />    <link rel="stylesheet" href="/static/base.css" />    <link      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"      rel="stylesheet"    />  </head>  <body>    {{ content }}    <script src="/static/scripts.js"></script>  </body></html>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      {% if page.title %} {{ page.title }} &nbsp;|&nbsp; {% endif %}
+      Josh Manning
+    </title>
+    <meta
+      name="description"
+      content="coach, ultimate frisbee, software engineer, user experience"
+    />
+    <meta
+      name="author"
+      content="Josh Manning <josh@jman.me> (https://jman.me)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/reset.css" />
+    <link rel="stylesheet" href="/static/main.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="global-header">
+        <div class="global-main">
+          <span class="global-title">Josh Manning</span>
+
+          <button class="mobile-menu-icon" onclick="toggleMobileMenu()">
+            <svg
+              class="icon-menu"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              class="icon-x"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <nav class="global-nav">
+          <ul>
+            <li class="{% if page.url == '/' %}active{% endif %}">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+
+            <li class="{% if page.url == '/projects/' %}active{% endif %}">
+              <a href="/projects">Projects</a>
+            </li>
+
+            <li>
+              <a href="/resume.pdf">Resume</a>
+            </li>
+            <li>
+              <a href="{{ site.github_link }}">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+  </body>
+</html>

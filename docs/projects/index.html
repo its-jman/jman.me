@@ -1,0 +1,34 @@
+---
+title: Projects
+layout: base
+---
+
+<div class="projects">
+  {% for project in site.data.projects %}
+  <div class="project-item">
+    <div class="project-header">
+      <div class="project-name">
+        {% if project.repository %}
+          <a href="{{ project.repository }}">
+            {{ project.name | markdownify| remove: '<p>' | remove: '</p>' }}
+          </a>
+        {% else %}
+          {{ project.name | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </div>
+      <div class="project-date">{{ project.date }}</div>
+    </div>
+    {% if project.company %}
+      <div class="project-company">
+        {{ project.company }}
+      </div>
+    {% endif %}
+    <div class="project-description">{{ project.description | markdownify }}</div>
+  </div>
+  {% endfor %}
+
+  <div class="project-item">
+    <a href="{{ site.github_link }}">JBManning on GitHub</a>
+  </div>
+</div>
+

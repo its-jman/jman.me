@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "cd docs && bundle exec jekyll serve",
+    "build": "cd docs && bundle exec jekyll build",
+    "start": "npm run dev",
+    "prod": "npm run build"
+  },
+  "prettier": {
+    "printWidth": 90,
+    "arrowParens": "always",
+    "trailingComma": "es5"
+  }
+}
