@@ -29,20 +29,20 @@
   date: "Late 2019"
   description: |-
     Data scraping tool built as an initial data source for a research project
-    through Kansas State University. I utilized a public Taiwanese website which rendered
+    through Kansas State University. I utilized a public Taiwanese website that rendered
     graphical representations of historical monthly weather data from several
-    hundered weather stations (for 15 years of data, over 140,000 individual files).
+    hundred weather stations (for 15 years of data, over 140,000 individual files).
     The data source had no bulk download available and the data was rendered on the
-    server side into HTML charts. The combination of being written in a foreign language,
+    server-side into HTML charts. The combination of being written in a foreign language,
     having to parse and convert data out of raw HTML, and scraping 140k individual files
-    making this an enjoyable project to solve. Implemented using Node.js.
+    made this an enjoyable project to solve. Implemented using Node.js.
 
 - name: "Dropbox-Screenshot"
   repository: https://github.com/jbmanning/dropbox-screenshot
   date: "Late 2016"
   description: |-
     When using Linux as a daily driver I missed the Mac/Windows functionality that
-    Dropbox had to have a keybind to select a screen region, save a screenshot into
+    Dropbox had to have a keybinding to select a screen region, save a screenshot into
     your Dropbox, and copy a shareable URL to your clipboard. I reimplemented this
     behavior using Python, Dropbox API, and various CLI tools.
 
@@ -50,7 +50,7 @@
   repository: https://github.com/jbmanning/create-react-app
   date: "May 2020"
   description: |-
-    I frequently setup new projects in React for testing or development and am a fan of
+    I frequently set up new projects in React for testing or development and am a fan of
     having an opinionated structure to work off of. Having a tool to consistently build
     these with the same structure and dependencies is a nice operations time saver.
     Implemented in Node.js, layered on top of the existing create-react-app tool.
@@ -62,9 +62,9 @@
   date: "Dec 2016, Apr 2017, May 2018"
   description: |-
     When using and learning Linux I ran into a lot of ways to have conflicting dependencies
-    or simply break everything. As a result, every few month I was in the habit of reinstalling
+    or simply break everything. As a result, every few months I was in the habit of reinstalling
     my entire Linux partition. This project is a tool to automate the re-setup of a new machine.
-    Implemented using Ansible and Python, this re-installed global dependencies in a consistent
+    Implemented using Ansible and Python, this tool re-installed global dependencies in a consistent
     format which would ideally not conflict for any future installs. Multiple iterations over time
     adding more functionality and different install types.
 
@@ -84,11 +84,11 @@
   repository: https://github.com/jbmanning/sequencing
   date: "Mid 2018"
   description: |-
-    A colleague of mine is working on a PhD in the field of Plant Pathology.
+    A colleague of mine is working on a Ph.D. in the field of Plant Pathology.
     He was curious about analyzing irregularities/patterns across a genome and had
     been manually searching through thousands of characters in word files by hand.
     We worked together to design and implement an initial mockup to parse and analyze
-    genomes from .fasta files, analyzing for irregularities and searching for defined
+    genomes from .fasta files, searching for irregularities and defined
     patterns. Written in Python and React.js.
 
 - name: Pong
