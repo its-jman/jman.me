@@ -28,7 +28,7 @@
 - name: "Email-Handler"
   date: "June 2020"
   description: |-
-    Simple API endpoint to send myself email on a trigger. Written in Node.js, hosted in
+    Simple API endpoint to send myself email programatically. Written in Node.js, hosted in
     AWS Lambda, and HTTP triggers in API Gateway. Email sent using Sendgrid API.
 
 - name: "Historical weather scraper"
