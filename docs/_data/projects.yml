@@ -63,6 +63,17 @@
     Introduces TypeScript, MobX, Prettier, a folder structure, and more. Use by
     running ```npx @jman.me/create-react-app [MyProject]```
 
+- name: "CivicReady Import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
+  date: "Late 2019"
+  description: |-
+    At CivicPlus we had several clients who transitioned to our CivicReady product from external
+    providers. Unfortunately, each of these providers had vastly different data formats,
+    frequently with hundreds of different files and minimal validation on the data.
+    On the path of streamlining the implementation process, I built a script that took
+    these data sources, imported them into MongoDB, validated and grouped the data into
+    unique users, and exported back into a consistent format. Errors and unknown data formats
+    were separated to be handled manually.
+
 - name: "Post-Install"
   repository: https://github.com/jbmanning/post-install
   date: "Dec 2016, Apr 2017, May 2018"
