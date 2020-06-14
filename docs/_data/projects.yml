@@ -8,13 +8,17 @@
     and implemented by hand to get better at studying and implementing various algorithms.
     View current work in progress build at [sudoku.jman.me](https://sudoku.jman.me).
 
-- name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
+- name: "CivicReady Import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
   date: "Late 2019"
   description: |-
-    User friendly, WYSIWYG site builder to provide drastically lower implementation
-    costs and enable users to build fully customizable components in-browser. Proof
-    of concept implemented in React.js with drag and drop containers, in-browser editable
-    SCSS styles, and templated reusable components.
+    At CivicPlus we had several clients who transitioned to our CivicReady product from external
+    providers. Unfortunately, each of these providers had vastly different data formats,
+    frequently with hundreds of different files and minimal validation on the data.
+    On the path of streamlining the implementation process, I built a script that took
+    these data sources, imported them into MongoDB, validated, cleaned, and grouped the data into
+    unique users, and exported back into a consistent format. Errors and unknown data formats
+    were separated to be handled manually. For the initial clients, this tool handled over half a
+    million records and eliminated several hundreds of manual data cleaning.
 
 - name: "Git-Key"
   repository: https://github.com/jbmanning/git-key
@@ -30,6 +34,14 @@
   description: |-
     Simple API endpoint to send myself email programatically. Written in Node.js, hosted in
     AWS Lambda, and HTTP triggers in API Gateway. Email sent using Sendgrid API.
+
+- name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
+  date: "Late 2019"
+  description: |-
+    User friendly, WYSIWYG site builder to provide drastically lower implementation
+    costs and enable users to build fully customizable components in-browser. Proof
+    of concept implemented in React.js with drag and drop containers, in-browser editable
+    SCSS styles, and templated reusable components.
 
 - name: "Historical weather scraper"
   date: "Late 2019"
@@ -62,18 +74,6 @@
     Implemented in Node.js, layered on top of the existing create-react-app tool.
     Introduces TypeScript, MobX, Prettier, a folder structure, and more. Use by
     running ```npx @jman.me/create-react-app [MyProject]```
-
-- name: "CivicReady Import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
-  date: "Late 2019"
-  description: |-
-    At CivicPlus we had several clients who transitioned to our CivicReady product from external
-    providers. Unfortunately, each of these providers had vastly different data formats,
-    frequently with hundreds of different files and minimal validation on the data.
-    On the path of streamlining the implementation process, I built a script that took
-    these data sources, imported them into MongoDB, validated, cleaned, and grouped the data into
-    unique users, and exported back into a consistent format. Errors and unknown data formats
-    were separated to be handled manually. For the initial clients, this tool handled over half a
-    million records and eliminated several hundreds of manual data cleaning.
 
 - name: "Post-Install"
   repository: https://github.com/jbmanning/post-install
