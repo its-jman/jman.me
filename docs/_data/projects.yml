@@ -8,6 +8,15 @@
     and implemented by hand to get better at studying and implementing various algorithms.
     View current work in progress build at [sudoku.jman.me](https://sudoku.jman.me).
 
+- name: "Git-Key"
+  repository: https://github.com/jbmanning/git-key
+  date: "Dec 2016, Apr 2017, Dec 2018"
+  description: |-
+    Built a comprehensive script to find, generate, and upload SSH keys to
+    your personal user account in GitHub. I frequently use this when setting
+    up new machines and new accounts. Multiple iterations. Using Bash, Python,
+    GitHub API, personal access tokens, one-time passwords, and OAuth.
+
 - name: "CivicReady Import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
   date: "Early 2020"
   description: |-
@@ -19,15 +28,6 @@
     unique users, and exported back into a consistent format. Errors and unknown data formats
     were separated to be handled manually. For the initial clients, this tool handled over half a
     million records and eliminated several hundreds of manual data cleaning.
-
-- name: "Git-Key"
-  repository: https://github.com/jbmanning/git-key
-  date: "Dec 2016, Apr 2017, Dec 2018"
-  description: |-
-    Built a comprehensive script to find, generate, and upload SSH keys to
-    your personal user account in GitHub. I frequently use this when setting
-    up new machines and new accounts. Multiple iterations. Using Bash, Python,
-    GitHub API, personal access tokens, one-time passwords, and OAuth.
 
 - name: "Email-Handler"
   date: "June 2020"
