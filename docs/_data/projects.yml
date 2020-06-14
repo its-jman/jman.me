@@ -27,7 +27,7 @@
     these data sources, imported them into MongoDB, validated, cleaned, and grouped the data into
     unique users, and exported back into a consistent format. Errors and unknown data formats
     were separated to be handled manually. For the initial clients, this tool handled over half a
-    million records and eliminated several hundreds of manual data cleaning.
+    million records and eliminated several hundred hours of manual data cleaning.
 
 - name: "Email-Handler"
   date: "June 2020"
