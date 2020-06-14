@@ -23,9 +23,8 @@
     At CivicPlus we had several clients who transitioned to our CivicReady product from external
     providers. Unfortunately, each of these providers had vastly different data formats,
     frequently with hundreds of different files and minimal validation on the data.
-    On the path of streamlining the implementation process, I built a script that took
-    these data sources, imported them into MongoDB, validated, cleaned, and grouped the data into
-    unique users, and exported back into a consistent format. Errors and unknown data formats
+    I built a script that took these data sources, imported them into MongoDB, validated, cleaned,
+    and grouped the data into unique users, and exported back into a consistent format. Errors and unknown data formats
     were separated to be handled manually. For the initial clients, this tool handled nearly half a
     million records and eliminated several hundred hours of manual data cleaning.
 
