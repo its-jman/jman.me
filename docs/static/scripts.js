@@ -32,7 +32,7 @@ if (source) {
       method: "POST",
       body: JSON.stringify({
         subject: "Homepage viewed with tag!",
-        content: `Source: ${atob(source)}<br>Raw Source: ${source}`,
+        content: `Source: ${atob(source)}<br>Raw Source: ${source}<br>Raw Url: ${window.location.href}`,
       }),
     }
   ).catch(() => {});
