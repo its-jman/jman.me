@@ -9,19 +9,22 @@ layout: base
     <div class="project-header">
       <div class="project-name">
         {% if project.repository %}
-          <a href="{{ project.repository }}">
-            {{ project.name | markdownify| remove: '<p>' | remove: '</p>' }}
-          </a>
-        {% else %}
+        <a href="{{ project.repository }}">
           {{ project.name | markdownify | remove: '<p>' | remove: '</p>' }}
+        </a>
+        {% else %}
+        {{ project.name | markdownify | remove: '<p>' | remove: '</p>' }}
         {% endif %}
       </div>
       <div class="project-date">{{ project.date }}</div>
     </div>
     {% if project.company %}
-      <div class="project-company">
-        {{ project.company }}
-      </div>
+    <div class="project-company">
+      {{ project.company }}
+    </div>
+    {% endif %}
+    {% if project.tech %}
+    <div class="project-tech">Technology: {{ project.tech | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     {% endif %}
     <div class="project-description">{{ project.description | markdownify }}</div>
   </div>
@@ -31,4 +34,3 @@ layout: base
     <a href="{{ site.github_link }}">JBManning on GitHub</a>
   </div>
 </div>
-

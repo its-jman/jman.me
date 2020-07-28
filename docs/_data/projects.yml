@@ -1,49 +1,58 @@
 ---
-- name: "Sudoku Solver"
+- name: "Sudoku App + Friendly Solver"
   repository: https://github.com/jbmanning/sudoku
-  date: "May 2020 - Present"
+  date: "2020 - Present"
+  tech: React, TypeScript, React Hooks, Recoil.js, MobX
   description: |-
-    Designed and implemented a solver for sudoku puzzles in React.js and Mobx. Employs an array
-    of well-known techniques to efficiently solve puzzles. Each technique was analyzed
-    and implemented by hand to get better at studying and implementing various algorithms.
-    View current work in progress build at [sudoku.jman.me](https://sudoku.jman.me).
+    Built an app for users to play sudoku puzzles, including a solver which produces human-friendly 
+    techniques and hints on how to solve it. Applies numerous algorithms, varying in 
+    complexity to produce strategies which solve most puzzles (all puzzles is a work in 
+    progress). View current build at [sudoku.jman.me](https://sudoku.jman.me).
 
-- name: "Git-Key"
-  repository: https://github.com/jbmanning/git-key
-  date: "Dec 2016, Apr 2017, Dec 2018"
+- name: "Sequencing"
+  repository: https://github.com/jbmanning/sequencing
+  date: "Early 2019"
+  tech: React, TypeScript, D3.js, Python, Flask, MongoDB
   description: |-
-    Built a comprehensive script to find, generate, and upload SSH keys to
-    your personal user account in GitHub. I frequently use this when setting
-    up new machines and new accounts. Multiple iterations. Using Bash, Python,
-    GitHub API, personal access tokens, one-time passwords, and OAuth.
+    A colleague of mine is working on a Ph.D. in the field of Plant Pathology.
+    He was curious about analyzing irregularities/patterns across a genome and had
+    been manually searching through thousands of characters in word files by hand.
+    I was able to design and implement an initial mockup to parse and analyze
+    genomes from .fasta files, searching for irregularities and defined
+    patterns. 
 
-- name: "CivicReady Import&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
+- name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
+  date: "Late 2019"
+  tech: React, MobX
+  description: |-
+    User friendly, WYSIWYG site builder to enable non-technical designers the ability to 
+    build websites (similar to Wix or Squarespace). Designed and built a proof of concept
+    with drag-and-drop components and in-browser editable styling similar to the Photoshop
+    tools they were accustomed to.
+
+- name: "CivicPlus Toolkit"
   date: "Early 2020"
+  tech: JavaScript
   description: |-
-    At CivicPlus we had several clients who transitioned to our CivicReady product from external
+    At CivicPlus we had some scattered tooling to automate a few menial tasks. I reimagined what may be possible
+    with this tooling to eliminate between 45-90 minutes off of each initial website setup. A key
+    force in eliminating the need for my initial role. 
+
+- name: "CivicPlus Imports"
+  date: "Early 2020"
+  tech: Node.js, MongoDB
+  description: |-
+    At CivicPlus we had several clients who transitioned to our products from external
     providers. Unfortunately, each of these providers had vastly different data formats,
     frequently with hundreds of different files and minimal validation on the data.
     I built a script that took these data sources, imported them into MongoDB, validated, cleaned,
     and grouped the data into unique users, and exported back into a consistent format. Errors and unknown data formats
     were separated to be handled manually. For the initial clients, this tool handled nearly half a
-    million records and eliminated several hundred hours of manual data cleaning.
-
-- name: "Email-Handler"
-  date: "June 2020"
-  description: |-
-    Simple API endpoint to send myself email programatically. Written in Node.js, hosted in
-    AWS Lambda, and HTTP triggers in API Gateway. Email sent using Sendgrid API.
-
-- name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
-  date: "Late 2019"
-  description: |-
-    User friendly, WYSIWYG site builder to provide drastically lower implementation
-    costs and enable users to build fully customizable components in-browser. Proof
-    of concept implemented in React.js with drag and drop containers, in-browser editable
-    SCSS styles, and templated reusable components.
+    million records and eliminated **several hundred hours** of manual data cleaning.
 
 - name: "Historical weather scraper"
   date: "Late 2019"
+  tech: Node.js
   description: |-
     Data scraping tool built as an initial data source for a research project
     through Kansas State University. I utilized a public Taiwanese website that rendered
@@ -51,32 +60,60 @@
     hundred weather stations (for 15 years of data, over 140,000 individual files).
     The data source had no bulk download available and the data was rendered on the
     server-side into HTML charts. The combination of being written in a foreign language,
-    having to parse and convert data out of raw HTML, and scraping 140k individual files
-    made this an enjoyable project to solve. Implemented using Node.js.
+    having to parse and convert data out of raw graph nodes, and scraping 140k individual files
+    made this an enjoyable project to solve. 
 
-- name: "Dropbox-Screenshot"
+- name: "Identity Platform"
+  repository: https://github.com/jbmanning/auth
+  date: "Early 2019, Present"
+  tech: React, Golang, DynamoDB
+  description: |-
+    This is a gigantic personal research project to study the field of authentication and
+    authorization across the web. My goal is to learn about and build a compliant implementation 
+    for SSO (Single Sign-On). I would never use this in a truly secure context, but learning about the intricacies
+    of the security flow provides a lot of insight into how things work. 
+
+- name: "Email Handler"
+  date: "June 2020"
+  tech: AWS Lambda, API Gateway, SendGrid, Node.js
+  description: |-
+    Simple API endpoint to send myself email programmatically. Written in Node.js, hosted in
+    AWS Lambda, and HTTP triggers in API Gateway. Email sent using Sendgrid API.
+
+- name: "Git-Key"
+  repository: https://github.com/jbmanning/git-key
+  date: "Dec 2016, Apr 2017, Dec 2018"
+  tech: Python, GitHub API, OAuth
+  description: |-
+    Built a comprehensive script to find, generate, and upload SSH keys to
+    your user account in GitHub, identifying and prompting for two-factor auth 
+    if appropriate. I frequently use this when setting up new machines and new 
+    accounts. Multiple iterations. Using Bash, Python, GitHub API, and OAuth.
+
+- name: "Dropbox Screenshot (Linux)"
   repository: https://github.com/jbmanning/dropbox-screenshot
   date: "Late 2016"
+  tech: Python, Dropbox API, various Bash tools.
   description: |-
-    When using Linux as a daily driver I missed the Mac/Windows functionality that
-    Dropbox had to have a keybinding to select a screen region, save a screenshot into
-    your Dropbox, and copy a shareable URL to your clipboard. I reimplemented this
-    behavior using Python, Dropbox API, and various CLI tools.
+    Clone of Dropbox functionality to support Linux devices to be able to select a screen region, 
+    capture a screenshot, and copy a shareable URL to your clipboard. 
 
 - name: "@jman.me/create-react-app"
   repository: https://github.com/jbmanning/create-react-app
   date: "May 2020"
+  tech: Node.js, create-react-app
   description: |-
     I frequently set up new projects in React for testing or development and am a fan of
     having an opinionated structure to work off of. Having a tool to consistently build
     these with the same structure and dependencies is a nice operations time saver.
     Implemented in Node.js, layered on top of the existing create-react-app tool.
     Introduces TypeScript, MobX, Prettier, a folder structure, and more. Use by
-    running ```npx @jman.me/create-react-app [MyProject]```
+    running ```npx @jman.me/create-react-app [MyProjectName]```
 
-- name: "Post-Install"
+- name: "Post Install (Linux)"
   repository: https://github.com/jbmanning/post-install
   date: "Dec 2016, Apr 2017, May 2018"
+  tech: Ansible, Bash, Python
   description: |-
     When using and learning Linux I ran into a lot of ways to have conflicting dependencies
     or simply break everything. As a result, every few months I was in the habit of reinstalling
@@ -85,32 +122,9 @@
     format which would ideally not conflict for any future installs. Multiple iterations over time
     adding more functionality and different install types.
 
-- name: "Identity Platform"
-  repository: https://github.com/jbmanning/auth
-  date: "Early 2019, Present"
-  description: |-
-    This is a gigantic personal research project to study the field of authentication and
-    authorization across the web. My goal is to learn about and build a compliant
-    authentication and authorization implementation for Single Sign On across my website.
-    I would never use this in a truly secure context, but learning about the intricacies
-    of this security flow provides a lot of knowledge around how things actually work instead
-    of entirely relying on libraries without knowing what they do. Initial stages of development
-    performed using Golang and React.js.
-
-- name: "Sequencing"
-  repository: https://github.com/jbmanning/sequencing
-  date: "Early 2019"
-  description: |-
-    A colleague of mine is working on a Ph.D. in the field of Plant Pathology.
-    He was curious about analyzing irregularities/patterns across a genome and had
-    been manually searching through thousands of characters in word files by hand.
-    We worked together to design and implement an initial mockup to parse and analyze
-    genomes from .fasta files, searching for irregularities and defined
-    patterns. Written in Python and React.js.
-
 - name: "Pong"
   repository: https://github.com/jbmanning/projects/pong
   date: "Early 2019"
+  tech: JavaScript, Canvas API
   description: |-
-    Quick free-time project to learn about game programming algorithms such as collision
-    and to implement the game of Pong using browser technologies.
+    Project to learn about game programming algorithms such as AABB collision, rendering, and more.
