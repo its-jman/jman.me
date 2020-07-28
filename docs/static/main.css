@@ -92,7 +92,8 @@ a:hover {
   padding: 1rem;
 }
 
-.content p {
+.content p,
+.content .p {
   margin-bottom: 1rem;
 }
 
