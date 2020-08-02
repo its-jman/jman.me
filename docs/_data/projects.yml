@@ -1,7 +1,7 @@
 ---
 - name: "Sudoku App + Friendly Solver"
   repository: https://github.com/jbmanning/sudoku
-  date: "2020 - Present"
+  date: "May 2020 - Present"
   tech: React, TypeScript, React Hooks, Recoil.js, MobX
   description: |-
     Built an app for users to play sudoku puzzles, including a solver which produces human-friendly 
