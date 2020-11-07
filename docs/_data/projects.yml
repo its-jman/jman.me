@@ -4,9 +4,9 @@
   date: "May 2020 - Present"
   tech: React, TypeScript, React Hooks, Recoil.js, MobX
   description: |-
-    Built an app for users to play sudoku puzzles, including a solver which produces human-friendly 
-    techniques and hints on how to solve it. Applies numerous algorithms, varying in 
-    complexity to produce strategies which solve most puzzles (all puzzles is a work in 
+    Built an app for users to play sudoku puzzles, including a solver which produces human-friendly
+    techniques and hints on how to solve it. Applies numerous algorithms, varying in
+    complexity to produce strategies which solve most puzzles (all puzzles is a work in
     progress). View current build at [sudoku.jman.me](https://sudoku.jman.me).
 
 - name: "Sequencing"
@@ -19,13 +19,13 @@
     been manually searching through thousands of characters in word files by hand.
     I was able to design and implement an initial mockup to parse and analyze
     genomes from .fasta files, searching for irregularities and defined
-    patterns. 
+    patterns.
 
 - name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
   date: "Late 2019"
   tech: React, MobX
   description: |-
-    User friendly, WYSIWYG site builder to enable non-technical designers the ability to 
+    User friendly, WYSIWYG site builder to enable non-technical designers the ability to
     build websites (similar to Wix or Squarespace). Designed and built a proof of concept
     with drag-and-drop components and in-browser editable styling similar to the Photoshop
     tools they were accustomed to.
@@ -35,8 +35,8 @@
   tech: JavaScript
   description: |-
     At CivicPlus we had some scattered tooling to automate a few menial tasks. I reimagined what may be possible
-    with this tooling to eliminate between 45-90 minutes off of each initial website setup. A key
-    force in eliminating the need for my initial role. 
+    with this tooling to eliminate between 45-90 minutes off of each initial website setup (In total, eliminating
+    between 12-16 hours per week for the webdev team). A key force in eliminating the need for my initial role.
 
 - name: "CivicPlus Imports"
   date: "Early 2020"
@@ -61,7 +61,7 @@
     The data source had no bulk download available and the data was rendered on the
     server-side into HTML charts. The combination of being written in a foreign language,
     having to parse and convert data out of raw graph nodes, and scraping 140k individual files
-    made this an enjoyable project to solve. 
+    made this an enjoyable project to solve.
 
 - name: "Identity Platform"
   repository: https://github.com/jbmanning/auth
@@ -69,9 +69,9 @@
   tech: React, Golang, DynamoDB
   description: |-
     This is a gigantic personal research project to study the field of authentication and
-    authorization across the web. My goal is to learn about and build a compliant implementation 
+    authorization across the web. My goal is to learn about and build a compliant implementation
     for SSO (Single Sign-On). I would never use this in a truly secure context, but learning about the intricacies
-    of the security flow provides a lot of insight into how things work. 
+    of the security flow provides a lot of insight into how things work.
 
 - name: "Email Handler"
   date: "June 2020"
@@ -86,8 +86,8 @@
   tech: Python, GitHub API, OAuth
   description: |-
     Built a comprehensive script to find, generate, and upload SSH keys to
-    your user account in GitHub, identifying and prompting for two-factor auth 
-    if appropriate. I frequently use this when setting up new machines and new 
+    your user account in GitHub, identifying and prompting for two-factor auth
+    if appropriate. I frequently use this when setting up new machines and new
     accounts. Multiple iterations. Using Bash, Python, GitHub API, and OAuth.
 
 - name: "Dropbox Screenshot (Linux)"
@@ -95,8 +95,8 @@
   date: "Late 2016"
   tech: Python, Dropbox API, various Bash tools.
   description: |-
-    Clone of Dropbox functionality to support Linux devices to be able to select a screen region, 
-    capture a screenshot, and copy a shareable URL to your clipboard. 
+    Clone of Dropbox functionality to support Linux devices to be able to select a screen region,
+    capture a screenshot, and copy a shareable URL to your clipboard.
 
 - name: "@jman.me/create-react-app"
   repository: https://github.com/jbmanning/create-react-app
