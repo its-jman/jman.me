@@ -90,6 +90,14 @@
     if appropriate. I frequently use this when setting up new machines and new
     accounts. Multiple iterations. Using Bash, Python, GitHub API, and OAuth.
 
+- name: "Screenshot Dashboard"
+  repository: https://screenshot-dashboard.jman.me
+  date: "Mid 2019"
+  tech: UX Design, Figma, React, TypeScript, MobX
+  description: |-
+    Designed a dashboard to manage automated screenshots of various reports. [View
+    here](https://screenshot-dashboard.jman.me).
+
 - name: "Dropbox Screenshot (Linux)"
   repository: https://github.com/jbmanning/dropbox-screenshot
   date: "Late 2016"
