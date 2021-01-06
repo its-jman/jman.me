@@ -1,32 +1,27 @@
 ---
 - name: "Sudoku App + Friendly Solver"
   repository: https://github.com/jbmanning/sudoku
-  date: "May 2020 - Present"
+  date: "May 2020"
   tech: React, TypeScript, React Hooks, Recoil.js, MobX
   description: |-
-    Built an app for users to play sudoku puzzles, including a solver which produces human-friendly
-    techniques and hints on how to solve it. Applies numerous algorithms, varying in
-    complexity to produce strategies which solve most puzzles (all puzzles is a work in
-    progress). View current build at [sudoku.jman.me](https://sudoku.jman.me).
+    App for users to play sudoku puzzles, including a solver which produces human-friendly techniques
+    and hints on how to solve almost any puzzle. Future development plans include building a mobile version, implementing
+    more techniques, a Computer Vision tool to allow users to import a picture of a board, and more.
 
 - name: "Sequencing"
   repository: https://github.com/jbmanning/sequencing
   date: "Early 2019"
   tech: React, TypeScript, D3.js, Python, Flask, MongoDB
   description: |-
-    A colleague of mine is working on a Ph.D. in the field of Plant Pathology.
-    He was curious about analyzing irregularities/patterns across a genome and had
-    been manually searching through thousands of characters in word files by hand.
-    I was able to design and implement an initial mockup to parse and analyze
-    genomes from .fasta files, searching for irregularities and defined
-    patterns.
+    A tool built to help analyze/visualize irregularities or patterns across a genome. Conceptualized as a
+    tool to help a friend of mine with a piece of his Ph.D.
 
 - name: "Site Builder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*CivicPlus*"
   date: "Late 2019"
-  tech: React, MobX
+  tech: UX Design, React, MobX
   description: |-
     User friendly, WYSIWYG site builder to enable non-technical designers the ability to
-    build websites (similar to Wix or Squarespace). Designed and built a proof of concept
+    build websites (similar to Wix or Squarespace). Designed the UX and built a proof of concept
     with drag-and-drop components and in-browser editable styling similar to the Photoshop
     tools they were accustomed to.
 
@@ -34,21 +29,16 @@
   date: "Mid 2019"
   tech: JavaScript
   description: |-
-    At CivicPlus we had some scattered tooling to automate a few menial tasks. I reimagined what may be possible
-    with this tooling to eliminate between 45-90 minutes off of each initial website setup (In total, eliminating
-    between 12-16 hours per week for the webdev team). A key force in eliminating the need for my initial role.
+    A toolkit I built which introduced time savings of 12-16 hours per week for the webdev team at
+    CivicPlus. A key force in eliminating the need for my initial role.
 
 - name: "CivicPlus Imports"
   date: "Early 2020"
   tech: Node.js, MongoDB
   description: |-
-    At CivicPlus we had several clients who transitioned to our products from external
-    providers. Unfortunately, each of these providers had vastly different data formats,
-    frequently with hundreds of different files and minimal validation on the data.
-    I built a script that took these data sources, imported them into MongoDB, validated, cleaned,
-    and grouped the data into unique users, and exported back into a consistent format. Errors and unknown data formats
-    were separated to be handled manually. For the initial clients, this tool handled nearly half a
-    million records and eliminated **several hundred hours** of manual data cleaning.
+    A tool built to automate the import, validation, and cleaning of data from external providers.
+    For the initial clients, this tool handled nearly half a million records and eliminated **several hundred
+    hours** of manual data cleaning.
 
 - name: "Historical weather scraper"
   date: "Late 2019"
@@ -95,7 +85,7 @@
   date: "Mid 2019"
   tech: UX Design, Figma, React, TypeScript, MobX
   description: |-
-    Designed a dashboard to manage automated screenshots of various reports. [View
+    Designed the UX for a dashboard to manage automated screenshots of various reports. [View design
     here](https://screenshot-dashboard.jman.me).
 
 - name: "Dropbox Screenshot (Linux)"
@@ -111,23 +101,18 @@
   date: "May 2020"
   tech: Node.js, create-react-app
   description: |-
-    I frequently set up new projects in React for testing or development and am a fan of
-    having an opinionated structure to work off of. Having a tool to consistently build
-    these with the same structure and dependencies is a nice operations time saver.
-    Implemented in Node.js, layered on top of the existing create-react-app tool.
-    Introduces TypeScript, MobX, Prettier, a folder structure, and more. Use by
-    running ```npx @jman.me/create-react-app [MyProjectName]```
+    Semi-fork of popular create-react-app toolkit, built in a way to provide my own personal
+    ideal development environment for React projects. Introduces TypeScript, MobX, Prettier,
+    a folder structure, and more. Use by running ```npx @jman.me/create-react-app [MyProjectName]```
 
 - name: "Post Install (Linux)"
   repository: https://github.com/jbmanning/post-install
   date: "Dec 2016, Apr 2017, May 2018"
   tech: Ansible, Bash, Python
   description: |-
-    When using and learning Linux I ran into a lot of ways to have conflicting dependencies
-    or simply break everything. As a result, every few months I was in the habit of reinstalling
-    my entire Linux partition. This project is a tool to automate the re-setup of a new machine.
+    This project is a tool to automate the re-setup of a new Linux development machine.
     Implemented using Ansible and Python, this tool re-installed global dependencies in a consistent
-    format which would ideally not conflict for any future installs. Multiple iterations over time
+    format which would not conflict for any future installs. Multiple iterations over time
     adding more functionality and different install types.
 
 - name: "Pong"
