@@ -6,24 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
-      {% if page.title %} {{ page.title }} &nbsp;|&nbsp; {% endif %}
-      Josh Manning
+      {% if page.title %} {{ page.title }} &nbsp;|&nbsp; {% endif %} Josh Manning
     </title>
     <meta
       name="description"
       content="coach, ultimate frisbee, software engineer, user experience"
     />
-    <meta
-      name="author"
-      content="Josh Manning <josh@jman.me> (https://jman.me)"
-    />
+    <meta name="author" content="Josh Manning <josh@jman.me> (https://jman.me)" />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
@@ -77,19 +73,12 @@
             </li>
 
             <li>
-              <a href="/josh-manning-resume.pdf">Resume</a>
-            </li>
-            <li>
-              <a href="{{ site.github_link }}">
-                GitHub
-              </a>
+              <a href="{{ site.github_link }}">GitHub</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="content">
-        {{ content }}
-      </div>
+      <div class="content">{{ content }}</div>
     </div>
     <script src="/static/scripts.js"></script>
   </body>

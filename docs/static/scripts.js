@@ -25,15 +25,14 @@ syncMobileMenuVisibility();
 const params = new URLSearchParams(window.location.search);
 const source = params.get("s");
 if (source) {
-  // I know this is exposed, feel free to send me a message! :)
-  fetch(
-    "https://lxob278pq5.execute-api.us-east-1.amazonaws.com/email-handler",
-    {
-      method: "POST",
-      body: JSON.stringify({
-        subject: "Homepage viewed with tag!",
-        content: `Source: ${atob(source)}<br>Raw Source: ${source}<br>Raw Url: ${window.location.href}`,
-      }),
-    }
-  ).catch(() => {});
+  // I know this is exposed, feel free to send me a message! ;)
+  fetch("https://lxob278pq5.execute-api.us-east-1.amazonaws.com/email-handler", {
+    method: "POST",
+    body: JSON.stringify({
+      subject: "Homepage viewed with tag!",
+      content: `Source: ${atob(source)}<br>Raw Source: ${source}<br>Raw Url: ${
+        window.location.href
+      }`,
+    }),
+  }).catch(() => {});
 }
