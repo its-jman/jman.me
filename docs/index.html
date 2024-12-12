@@ -1,21 +1,39 @@
 ---
+title: Projects
 layout: base
 ---
 
-<div class="p">
-  Hi! My name is Josh Manning.
-</div>
+<span class="small-global-title">Projects</span>
+<div class="projects">
+  {% for project in site.data.projects %}
+  <div class="project-item">
+    <div class="project-header">
+      <div class="project-name">
+        {% if project.repository %}
+        <a href="{{ project.repository }}">
+          {{ project.name | markdownify | remove: '<p>' | remove: '</p>' }}
+        </a>
+        {% else %}
+        {{ project.name | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </div>
+      <div class="project-date">{{ project.date }}</div>
+    </div>
+    {% if project.company %}
+    <div class="project-company">
+      {{ project.company }}
+    </div>
+    {% endif %}
+    {% if project.tech %}
+    <div class="project-tech">Technology: {{ project.tech | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+    {% endif %}
+    <div class="project-description">{{ project.description | markdownify }}</div>
+  </div>
+  {% endfor %}
 
-<div class="p">
-  I am a Software Engineer at Meta. My experience has been primarily on the front end but I've also spent a lot of time working on my own projects, bouncing around a lot of different languages and technologies.
-</div>
-
-<div class="p">
-  Outside of any particular tech stack, I love learning, teaching, and building clean, automated experiences for those around me. On a more personal level outside of coding, I also travel around the country competing on an Ultimate Frisbee team. I've spent a lot of time around Kansas City, but am currently based out of the Bay Area, CA.
-</div>
-
-<div class="p">
-  For my (mostly unused) Internet identities, see
-  <a href="https://keybase.io/jbmanning">keybase.io</a>.
-  (<a href="/keybase.txt">proof</a>)
+  <div class="project-item">
+    <a href="https://github.com/{{ site.github_profile }}"
+      >{{ site.github_profile }} on GitHub</a
+    >
+  </div>
 </div>

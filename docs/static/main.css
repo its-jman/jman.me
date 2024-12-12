@@ -47,6 +47,11 @@ a:hover {
   font-size: 2rem;
   font-weight: 600;
 }
+.small-global-title {
+  color: var(--cool-grey);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 
 .global-nav {
   position: relative;
@@ -132,7 +137,6 @@ a:hover {
   font-size: 0.85rem;
   font-style: italic;
   margin-left: 18px;
-
 }
 
 .project-description {

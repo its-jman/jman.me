@@ -1,6 +1,6 @@
 ---
 - name: "Sudoku App + Friendly Solver"
-  repository: https://github.com/jbmanning/sudoku
+  repository: https://github.com/its-jman/sudoku
   date: "May 2020"
   tech: React, TypeScript, React Hooks, Recoil.js, MobX
   description: |-
@@ -9,7 +9,7 @@
     more techniques, a Computer Vision tool to allow users to import a picture of a board, and more.
 
 - name: "Sequencing"
-  repository: https://github.com/jbmanning/sequencing
+  repository: https://github.com/its-jman/sequencing
   date: "Early 2019"
   tech: React, TypeScript, D3.js, Python, Flask, MongoDB
   description: |-
@@ -54,7 +54,6 @@
     made this an enjoyable project to solve.
 
 - name: "Identity Platform"
-  repository: https://github.com/jbmanning/auth
   date: "Early 2019, Present"
   tech: React, Golang, DynamoDB
   description: |-
@@ -71,7 +70,7 @@
     AWS Lambda, and HTTP triggers in API Gateway. Email sent using Sendgrid API.
 
 - name: "Git-Key"
-  repository: https://github.com/jbmanning/git-key
+  repository: https://github.com/its-jman/git-key
   date: "Dec 2016, Apr 2017, Dec 2018"
   tech: Python, GitHub API, OAuth
   description: |-
@@ -89,7 +88,7 @@
     here](https://screenshot-dashboard.jman.me).
 
 - name: "Dropbox Screenshot (Linux)"
-  repository: https://github.com/jbmanning/dropbox-screenshot
+  repository: https://github.com/its-jman/dropbox-screenshot
   date: "Late 2016"
   tech: Python, Dropbox API, various Bash tools.
   description: |-
@@ -97,7 +96,7 @@
     capture a screenshot, and copy a shareable URL to your clipboard.
 
 - name: "@jman.me/create-react-app"
-  repository: https://github.com/jbmanning/create-react-app
+  repository: https://github.com/its-jman/create-react-app
   date: "May 2020"
   tech: Node.js, create-react-app
   description: |-
@@ -106,7 +105,7 @@
     a folder structure, and more. Use by running ```npx @jman.me/create-react-app [MyProjectName]```
 
 - name: "Post Install (Linux)"
-  repository: https://github.com/jbmanning/post-install
+  repository: https://github.com/its-jman/post-install
   date: "Dec 2016, Apr 2017, May 2018"
   tech: Ansible, Bash, Python
   description: |-
@@ -116,7 +115,7 @@
     adding more functionality and different install types.
 
 - name: "Pong"
-  repository: https://github.com/jbmanning/projects/pong
+  repository: https://github.com/its-jman/projects/tree/master/pong
   date: "Early 2019"
   tech: JavaScript, Canvas API
   description: |-
