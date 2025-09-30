@@ -1,4 +1,12 @@
 ---
+- name: "File Drop"
+  repository: https://filedrop.jman.dev/drops/de55SuS2YyFU
+  date: "April 2025"
+  tech: React, TypeScript, Auth0, @teeny.dev/durable
+  description: |-
+    A platform to share full-sized file uploads, particularly photographs, without the cost or limitations of 
+    major providers. Includes auth utilizing Auth0 and Auth.js, and a suite of Cloudflare products to host the website and provide data storage.
+
 - name: "Sudoku App + Friendly Solver"
   repository: https://github.com/its-jman/sudoku
   date: "May 2020"
