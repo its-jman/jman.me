@@ -1,6 +1,6 @@
 ---
 - name: "@teeny.dev/assistant"
-  date: "October 2026"
+  date: "November 2026"
   tech: Cloudflare Workers, Workers AI, Whisper, D1, Drizzle, MCP, React, TypeScript
   description: |-
     Architecting a lightweight voice assistant for the microphone-equipped Pebble Index 01 smart ring, using Whisper
