@@ -3,10 +3,10 @@
   date: "October 2026"
   tech: Cloudflare Workers, Workers AI, Whisper, D1, Drizzle, MCP, React, TypeScript
   description: |-
-    * Architecting a lightweight voice assistant for the microphone-equipped Pebble Index 01 smart ring, using Whisper
-      for transcription and multi-model routing between Clef for simple requests and Luna for complex tool calls.
-    * Established a benchmark suite before implementation to evaluate accuracy, latency, and inference cost, guiding
-      model selection and routing decisions throughout Claude Code-driven development.
+    Architecting a lightweight voice assistant for the microphone-equipped Pebble Index 01 smart ring, using Whisper
+    for transcription and multi-model routing between Clef for simple requests and Luna for complex tool calls.
+    Established a benchmark suite before implementation to evaluate accuracy, latency, and inference cost, guiding
+    model selection and routing decisions throughout Claude Code-driven development.
 
 - name: "Joey's Fundraiser"
   repository: https://joey-fundraiser.pages.dev
