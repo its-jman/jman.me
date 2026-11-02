@@ -1,34 +1,34 @@
 ---
 - name: "@teeny.dev/assistant"
   date: "October 2026"
-  tech: Cloudflare Workers, Workers AI, D1, Drizzle, MCP, React, TypeScript
+  tech: Cloudflare Workers, Workers AI, Whisper, D1, Drizzle, MCP, React, TypeScript
   description: |-
-    An assistant router: one utterance in, one tool call out. A fast classifier picks the intent first,
-    and a larger model is called only when the classifier can't settle it. Each user owns their own intents,
-    routing settings, and MCP tool connections, with a voice endpoint and a benchmark for intent and argument accuracy.
+    * Architecting a lightweight voice assistant for the microphone-equipped Pebble Index 01 smart ring, using Whisper
+      for transcription and multi-model routing between Clef for simple requests and Luna for complex tool calls.
+    * Established a benchmark suite before implementation to evaluate accuracy, latency, and inference cost, guiding
+      model selection and routing decisions throughout Claude Code-driven development.
 
 - name: "Joey's Fundraiser"
   repository: https://joey-fundraiser.pages.dev
   date: "October 2026"
   tech: TypeScript, Vite, Google Sheets
   description: |-
-    Pledge page for a friend's holiday 5K fundraiser. Reads pledges and logged runs from a public Google Sheet
-    in the browser with no backend, and refreshes live totals as the miles come in.
+    Fundraiser page for a friend's holiday charity run. Live sync with Google Sheets as a backend.
 
 - name: "Skadis Hooks for Fusion 360"
   repository: https://github.com/its-jman/skadis-hooks-fusion-plugin
   date: "October 2026"
   tech: Python, Fusion 360 API
   description: |-
-    Fusion 360 add-in that adds IKEA SKÅDIS pegboard hooks to any planar face. Pick how many hooks across
-    and rows down, and it places hooks on the SKÅDIS slot grid, with staggered rows and offsets.
+    Fusion add-in to automatically lay out hooks across the face of an object allowing easy attachment to an
+    IKEA SKÅDIS pegboard, fully customizable.
 
 - name: "Digester"
   date: "October 2026"
-  tech: Cloudflare Workers, Durable Objects, D1, React, tRPC, Auth.js, @teeny.dev/durable
+  tech: Cloudflare Workers, Durable Objects, SQLite, Workers for Platforms, React, tRPC, Auth.js, @teeny.dev/durable
   description: |-
-    Subscribe to RSS, Atom, and JSON feeds and get new posts as one email digest on your schedule. A Durable
-    Object per feed owns its fetch schedule, one per user owns the next digest, and another caps concurrent fetches per host.
+    RSS aggregator produces scheduled digests across user-provided feeds, built on Durable Objects and SQLite,
+    with Workers for Platforms enabling user-supplied scripting for custom filtering and formatting.
 
 - name: "File Drop"
   repository: https://filedrop.jman.dev/drops/de55SuS2YyFU
