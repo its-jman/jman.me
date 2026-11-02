@@ -1,4 +1,35 @@
 ---
+- name: "@teeny.dev/assistant"
+  date: "October 2026"
+  tech: Cloudflare Workers, Workers AI, D1, Drizzle, MCP, React, TypeScript
+  description: |-
+    An assistant router: one utterance in, one tool call out. A fast classifier picks the intent first,
+    and a larger model is called only when the classifier can't settle it. Each user owns their own intents,
+    routing settings, and MCP tool connections, with a voice endpoint and a benchmark for intent and argument accuracy.
+
+- name: "Joey's Fundraiser"
+  repository: https://joey-fundraiser.pages.dev
+  date: "October 2026"
+  tech: TypeScript, Vite, Google Sheets
+  description: |-
+    Pledge page for a friend's holiday 5K fundraiser. Reads pledges and logged runs from a public Google Sheet
+    in the browser with no backend, and refreshes live totals as the miles come in.
+
+- name: "Skadis Hooks for Fusion 360"
+  repository: https://github.com/its-jman/skadis-hooks-fusion-plugin
+  date: "October 2026"
+  tech: Python, Fusion 360 API
+  description: |-
+    Fusion 360 add-in that adds IKEA SKÅDIS pegboard hooks to any planar face. Pick how many hooks across
+    and rows down, and it places hooks on the SKÅDIS slot grid, with staggered rows and offsets.
+
+- name: "Digester"
+  date: "October 2026"
+  tech: Cloudflare Workers, Durable Objects, D1, React, tRPC, Auth.js, @teeny.dev/durable
+  description: |-
+    Subscribe to RSS, Atom, and JSON feeds and get new posts as one email digest on your schedule. A Durable
+    Object per feed owns its fetch schedule, one per user owns the next digest, and another caps concurrent fetches per host.
+
 - name: "File Drop"
   repository: https://filedrop.jman.dev/drops/de55SuS2YyFU
   date: "April 2025"
@@ -6,6 +37,14 @@
   description: |-
     A platform to share full-sized file uploads, particularly photographs, without the cost or limitations of 
     major providers. Includes auth utilizing Auth0 and Auth.js, and a suite of Cloudflare products to host the website and provide data storage.
+
+- name: "@teeny.dev/durable"
+  repository: https://github.com/its-jman/teeny.dev/tree/main/packages/durable
+  date: "July 2023"
+  tech: TypeScript, Cloudflare Durable Objects
+  description: |-
+    Library to simplify Durable Objects in Cloudflare Workers, with schema-validated typed storage
+    and alarm management. Published on npm and used by File Drop and Digester.
 
 - name: "Sudoku App + Friendly Solver"
   repository: https://github.com/its-jman/sudoku
@@ -62,7 +101,7 @@
     made this an enjoyable project to solve.
 
 - name: "Identity Platform"
-  date: "Early 2019, Present"
+  date: "Early 2019"
   tech: React, Golang, DynamoDB
   description: |-
     This is a gigantic personal research project to study the field of authentication and
@@ -79,7 +118,7 @@
 
 - name: "Git-Key"
   repository: https://github.com/its-jman/git-key
-  date: "Dec 2016, Apr 2017, Dec 2018"
+  date: "Dec 2016"
   tech: Python, GitHub API, OAuth
   description: |-
     Built a comprehensive script to find, generate, and upload SSH keys to
@@ -114,7 +153,7 @@
 
 - name: "Post Install (Linux)"
   repository: https://github.com/its-jman/post-install
-  date: "Dec 2016, Apr 2017, May 2018"
+  date: "Dec 2016"
   tech: Ansible, Bash, Python
   description: |-
     This project is a tool to automate the re-setup of a new Linux development machine.
