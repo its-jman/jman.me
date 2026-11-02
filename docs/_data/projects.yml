@@ -8,7 +8,7 @@
     Established a benchmark suite before implementation to evaluate accuracy, latency, and inference cost, guiding
     model selection and routing decisions throughout Claude Code-driven development.
 
-- name: "Joey's Fundraiser"
+- name: "Charity Fundraiser"
   repository: https://joey-fundraiser.pages.dev
   date: "October 2026"
   tech: TypeScript, Vite, Google Sheets
