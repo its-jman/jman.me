@@ -1,12 +1,15 @@
 ---
 - name: "@teeny.dev/assistant"
+  repository: https://assistant.teeny.dev/
   date: "November 2026"
-  tech: Cloudflare Workers, Workers AI, Whisper, D1, Drizzle, MCP, React, TypeScript
+  tech: Cloudflare Workers, Workers for Platforms, Workers AI, Whisper, Cloudflare Clef, OpenAI, D1, Drizzle, MCP, React, TypeScript
   description: |-
-    Architecting a lightweight voice assistant for the microphone-equipped Pebble Index 01 smart ring, using Whisper
-    for transcription and multi-model routing between Clef for simple requests and LLAMA / Luna for complex tool calls.
-    Established a benchmark suite before implementation to evaluate accuracy, latency, and inference cost, guiding
-    model selection and routing decisions throughout Claude Code-driven development.
+    Architected a voice assistant for the Pebble Index 01 smart ring: Whisper transcription, a small decision
+    model for low-latency routing, and Llama or OpenAI for complex tool calls. Established a benchmark suite
+    before implementation to evaluate accuracy, latency, and inference cost, guiding model selection and
+    routing decisions throughout Claude Code-driven development. Built user-configurable MCP integrations,
+    tunable routing between lightweight decision models and LLMs, and custom script execution on Cloudflare
+    Workers for Platforms, abstracting away authentication and hosting.
 
 - name: "Charity Fundraiser"
   repository: https://joey-fundraiser.pages.dev
@@ -23,13 +26,6 @@
     Fusion add-in to automatically lay out hooks across the face of an object allowing easy attachment to an
     IKEA SKÅDIS pegboard, fully customizable.
 
-- name: "Digester"
-  date: "August 2026"
-  tech: Cloudflare Workers, Durable Objects, SQLite, Workers for Platforms, React, tRPC, Auth.js, @teeny.dev/durable
-  description: |-
-    RSS aggregator produces scheduled digests across user-provided feeds, built on Durable Objects and SQLite,
-    with Workers for Platforms enabling user-supplied scripting for custom filtering and formatting.
-
 - name: "File Drop"
   repository: https://filedrop.jman.dev/drops/de55SuS2YyFU
   date: "April 2025"
@@ -38,13 +34,22 @@
     A platform to share full-sized file uploads, particularly photographs, without the cost or limitations of 
     major providers. Includes auth utilizing Auth0 and Auth.js, and a suite of Cloudflare products to host the website and provide data storage.
 
+- name: "Digester"
+  repository: https://digester.jman.dev/
+  date: "January 2025"
+  tech: TypeScript, Cloudflare Workers, Durable Objects, SQLite, Workers for Platforms, React, tRPC, Auth.js, @teeny.dev/durable
+  description: |-
+    Built an RSS aggregator to produce digests of new posts across user-provided feeds, built on Durable Objects
+    and SQLite, with Workers for Platforms enabling user-supplied scripting for custom filtering and formatting.
+
 - name: "@teeny.dev/durable"
   repository: https://github.com/its-jman/teeny.dev/tree/main/packages/durable
   date: "July 2023"
-  tech: TypeScript, Cloudflare Durable Objects
+  tech: TypeScript, Cloudflare Durable Objects, SQLite, Vitest, npm
   description: |-
-    Library to simplify Durable Objects in Cloudflare Workers, with schema-validated typed storage
-    and alarm management. Published on npm and used by File Drop and Digester.
+    Authored an open-source library simplifying Cloudflare Durable Objects: type-safe RPC to object methods,
+    typed key/value access, payload-carrying and recurring alarms, and SQL migrations with type-safe queries.
+    Built test-first with Vitest. Published on npm and used by File Drop and Digester.
 
 - name: "Sudoku App + Friendly Solver"
   repository: https://github.com/its-jman/sudoku
@@ -76,16 +81,15 @@
   date: "Mid 2019"
   tech: JavaScript
   description: |-
-    A toolkit I built which introduced time savings of 12-16 hours per week for the webdev team at
-    CivicPlus. A key force in eliminating the need for my initial role.
+    Built a toolkit that cut government site delivery from 8+ hours to 2-4, removing so much of the work
+    that the role was never backfilled after I moved into a dedicated automation position.
 
 - name: "CivicPlus Imports"
   date: "Early 2020"
   tech: Node.js, MongoDB
   description: |-
-    A tool built to automate the import, validation, and cleaning of data from external providers.
-    For the initial clients, this tool handled nearly half a million records and eliminated **several hundred
-    hours** of manual data cleaning.
+    Replaced a manual data ingestion process consuming **400-600 content team hours** for a single large
+    client with tooling that cleaned, validated, and grouped a 500,000-row source in 30 minutes.
 
 - name: "Historical weather scraper"
   date: "Late 2019"
