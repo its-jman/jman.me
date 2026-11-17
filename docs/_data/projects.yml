@@ -41,7 +41,7 @@
 
 - name: "@teeny.dev/durable"
   repository: https://github.com/its-jman/teeny.dev/tree/main/packages/durable
-  date: "July 2023"
+  date: "May 2024"
   tech: TypeScript, Cloudflare Durable Objects, SQLite, Vitest, npm
   description: |-
     Authored an open-source library simplifying Cloudflare Durable Objects: type-safe RPC to object methods,
