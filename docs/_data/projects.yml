@@ -4,12 +4,9 @@
   date: "November 2026"
   tech: Cloudflare Workers, Workers for Platforms, Workers AI, Whisper, Cloudflare Clef, OpenAI, D1, Drizzle, MCP, React, TypeScript
   description: |-
-    Architected a voice assistant for the Pebble Index 01 smart ring: Whisper transcription, a small decision
-    model for low-latency routing, and Llama or OpenAI for complex tool calls. Established a benchmark suite
-    before implementation to evaluate accuracy, latency, and inference cost, guiding model selection and
-    routing decisions throughout Claude Code-driven development. Built user-configurable MCP integrations,
-    tunable routing between lightweight decision models and LLMs, and custom script execution on Cloudflare
-    Workers for Platforms, abstracting away authentication and hosting.
+    Voice assistant for the Pebble Index 01 smart ring. Whisper handles transcription, a small model routes
+    simple requests quickly, and Llama or OpenAI handle complex tool calls. Supports user-configured MCP
+    integrations and custom scripts, with model choices guided by a benchmark of accuracy, latency, and cost.
 
 - name: "Charity Fundraiser"
   repository: https://joey-fundraiser.pages.dev
@@ -26,6 +23,14 @@
     Fusion add-in to automatically lay out hooks across the face of an object allowing easy attachment to an
     IKEA SKÅDIS pegboard, fully customizable.
 
+- name: "Digester"
+  repository: https://digester.jman.dev/
+  date: "September 2026"
+  tech: TypeScript, Cloudflare Workers, Durable Objects, SQLite, Workers for Platforms, React, tRPC, Auth.js, @teeny.dev/durable
+  description: |-
+    Built an RSS aggregator to produce digests of new posts across user-provided feeds, built on Durable Objects
+    and SQLite, with Workers for Platforms enabling user-supplied scripting for custom filtering and formatting.
+
 - name: "File Drop"
   repository: https://filedrop.jman.dev/drops/de55SuS2YyFU
   date: "April 2025"
@@ -33,14 +38,6 @@
   description: |-
     A platform to share full-sized file uploads, particularly photographs, without the cost or limitations of 
     major providers. Includes auth utilizing Auth0 and Auth.js, and a suite of Cloudflare products to host the website and provide data storage.
-
-- name: "Digester"
-  repository: https://digester.jman.dev/
-  date: "January 2025"
-  tech: TypeScript, Cloudflare Workers, Durable Objects, SQLite, Workers for Platforms, React, tRPC, Auth.js, @teeny.dev/durable
-  description: |-
-    Built an RSS aggregator to produce digests of new posts across user-provided feeds, built on Durable Objects
-    and SQLite, with Workers for Platforms enabling user-supplied scripting for custom filtering and formatting.
 
 - name: "@teeny.dev/durable"
   repository: https://github.com/its-jman/teeny.dev/tree/main/packages/durable
